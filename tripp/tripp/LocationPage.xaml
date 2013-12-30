@@ -18,7 +18,7 @@
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock x:Name="TextBlockLocation" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Location!" TextAlignment="Center" FontSize="60"/>
+            <TextBlock x:Name="TextBlockLocation" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Location!?" TextAlignment="Center" FontSize="60"/>
             <TextBlock x:Name="TextBlockEdit" Grid.Column="2" Margin="0" Text="Edit" TextAlignment="Center" FontSize="60" Tapped="TappedEdit"/>
             <TextBlock x:Name="TextBlockBack" Margin="0" TextWrapping="Wrap" Text="Back" FontSize="70" TextAlignment="Center" Tapped="TappedBack"/>
         </Grid>
