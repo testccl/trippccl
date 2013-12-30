@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="tripp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tripp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:m="using:Bing.Maps">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="GridBody" Margin="0" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500" MaxWidth="500"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="700" MaxWidth="700"/>
+            </Grid.ColumnDefinitions>
+            <m:Map x:Name="MapMain" Margin="0" Credentials="Agri2Jt-Zd_bsBz4tYg2YJfNYmvA976SfiUyaUp7vGSIAhuWzTTY60MbkREp91tX" Grid.Column="1">
+               
+            </m:Map>
+            <Grid x:Name="GridAddLocation" Grid.Column="2" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+                <ScrollViewer x:Name="ScrollViewerLocationResults" Margin="0" Grid.Row="1">
+                    <StackPanel x:Name="StackPanelLocationResults"/>
+                </ScrollViewer>
+                <Grid x:Name="GridSearch" Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="TextBoxSearch" Margin="0" TextWrapping="Wrap" Text="Enter Location" FontSize="50"/>
+                    <Button x:Name="ButtonSearch" Content="Search" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" FontSize="30" Click="ButtonClickSearchLocations"/>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid x:Name="HeaderGrid" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="+" FontSize="100" TextAlignment="Center" Tapped="TappedAddLocation"/>
+            <TextBlock x:Name="TextBlockTripp" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="tripp" TextAlignment="Center" FontSize="100"/>
+            <TextBlock Margin="0" TextWrapping="Wrap" Text="?" FontSize="100" TextAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Page>

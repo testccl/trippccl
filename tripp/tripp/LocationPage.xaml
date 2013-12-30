@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="tripp.LocationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tripp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="HeaderGrid" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="TextBlockLocation" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Location" TextAlignment="Center" FontSize="60"/>
+            <TextBlock x:Name="TextBlockEdit" Grid.Column="2" Margin="0" Text="Edit" TextAlignment="Center" FontSize="60" Tapped="TappedEdit"/>
+            <TextBlock x:Name="TextBlockBack" Margin="0" TextWrapping="Wrap" Text="Back" FontSize="70" TextAlignment="Center" Tapped="TappedBack"/>
+        </Grid>
+        <ScrollViewer x:Name="ScrollViewerLocationContent" Margin="0" Grid.Row="1">
+            <StackPanel x:Name="StackPanelContent">
+                <Grid x:Name="GridDeleteEntrySettings" Height="200" MaxHeight="200">
+                    <Button x:Name="ButtonDeleteLocation" Content="Delete Location" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" FontSize="50" Click="ButtonClickDeleteLocation"/>
+                </Grid>
+                <Grid x:Name="GridPhotos" Height="500">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <ScrollViewer x:Name="ScrollViewerPictures" Margin="0" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Disabled">
+                        <StackPanel x:Name="StackPanelPictures" Orientation="Horizontal" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Hidden"/>
+                    </ScrollViewer>
+                </Grid>
+                <Grid x:Name="GridPictureSettings" Height="100" MaxHeight="100" Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="ButtonPickPicture" Content="Pick From File" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" FontSize="30" Click="ButtonClickPickPicture"/>
+                    <Button x:Name="ButtonDeletePicture" Content="Delete Picture" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" FontSize="30" Click="ButtonClickDeletePicture"/>
+                </Grid>
+                <Grid x:Name="GridNotes" Height="300">
+                    <TextBox x:Name="TextBoxTripNotes" Margin="0" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Visible" Background="{x:Null}" Foreground="White" FontSize="50"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
