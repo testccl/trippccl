@@ -17,7 +17,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="500" MaxWidth="500"/>
                 <ColumnDefinition/>
-                <ColumnDefinition Width="700" MaxWidth="700"/>
+                <ColumnDefinition Width="500" MaxWidth="700"/>
             </Grid.ColumnDefinitions>
             <m:Map x:Name="MapMain" Margin="0" Credentials="Agri2Jt-Zd_bsBz4tYg2YJfNYmvA976SfiUyaUp7vGSIAhuWzTTY60MbkREp91tX" Grid.Column="1">
                
@@ -46,9 +46,9 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="+" FontSize="100" TextAlignment="Center" Tapped="TappedAddLocation"/>
-            <TextBlock x:Name="TextBlockTripp" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="tripp" TextAlignment="Center" FontSize="100"/>
-            <TextBlock Margin="0" TextWrapping="Wrap" Text="?" FontSize="100" TextAlignment="Center"/>
+            <TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="+" FontSize="64" TextAlignment="Center" Tapped="TappedAddLocation" FontFamily="Ebrima"/>
+            <TextBlock x:Name="TextBlockTripp" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="tripp" TextAlignment="Center" FontSize="64" FontFamily="Ebrima"/>
+            <TextBlock Margin="0" TextWrapping="Wrap" Text="?" FontSize="64" TextAlignment="Center" FontFamily="Ebrima"/>
         </Grid>
     </Grid>
 </Page>
