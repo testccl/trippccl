@@ -15,8 +15,10 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="tripp.App">
-      <m2:VisualElements DisplayName="tripp" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="tripp" ForegroundText="light" BackgroundColor="turquoise">
-        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="blue" />
+      <m2:VisualElements DisplayName="tripp" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="tripp" ForegroundText="light" BackgroundColor="#1E90FF">
+        <m2:DefaultTile ShortName="tripp" Square70x70Logo="Assets\Square70x70Logo.png">
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#1E90FF" />
       </m2:VisualElements>
     </Application>
   </Applications>
