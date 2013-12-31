@@ -12,7 +12,7 @@
             <RowDefinition/>
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
-        <Grid x:Name="HeaderGrid" Margin="0">
+        <Grid x:Name="HeaderGrid" Margin="0" Height="100" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="5*"/>
@@ -20,7 +20,7 @@
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="TextBlockLocation" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Location!?" TextAlignment="Center" FontSize="60"/>
             <TextBlock x:Name="TextBlockEdit" Grid.Column="2" Margin="0" Text="Edit" TextAlignment="Center" FontSize="60" Tapped="TappedEdit"/>
-            <TextBlock x:Name="TextBlockBack" Margin="0" TextWrapping="Wrap" Text="Back" FontSize="70" TextAlignment="Center" Tapped="TappedBack"/>
+            <TextBlock x:Name="TextBlockBack" Margin="0" TextWrapping="Wrap" Text="Back" FontSize="64" TextAlignment="Center" Tapped="TappedBack" FontFamily="Ebrima"/>
         </Grid>
         <ScrollViewer x:Name="ScrollViewerLocationContent" Margin="0" Grid.Row="1">
             <StackPanel x:Name="StackPanelContent">

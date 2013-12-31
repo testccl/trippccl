@@ -213,6 +213,16 @@ namespace tripp
 
         }
 
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBlockTripp_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         
     }
 
