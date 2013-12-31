@@ -47,7 +47,7 @@
                 <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="+" FontSize="64" TextAlignment="Center" Tapped="TappedAddLocation" FontFamily="Ebrima" Height="80" VerticalAlignment="Top"/>
-            <TextBlock x:Name="TextBlockTripp" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="tripp" TextAlignment="Center" FontSize="64" FontFamily="Ebrima" VerticalAlignment="Top" Height="80" Padding="0,-8,0,8"/>
+            <TextBlock x:Name="TextBlockTripp" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="tripp" TextAlignment="Center" FontSize="64" FontFamily="Ebrima" VerticalAlignment="Top" Height="80" Padding="0,0,0,0"/>
             <TextBlock Margin="0" TextWrapping="Wrap" Text="?" FontSize="64" TextAlignment="Center" FontFamily="Ebrima" Height="80" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
