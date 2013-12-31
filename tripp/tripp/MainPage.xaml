@@ -10,10 +10,10 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid x:Name="GridBody" Margin="0" Grid.Row="1">
+        <Grid x:Name="GridBody" Margin="0" Grid.Row="1" Height="688" VerticalAlignment="Bottom">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="500" MaxWidth="500"/>
                 <ColumnDefinition/>
@@ -27,28 +27,28 @@
                     <RowDefinition/>
                     <RowDefinition Height="6*"/>
                 </Grid.RowDefinitions>
-                <ScrollViewer x:Name="ScrollViewerLocationResults" Margin="0" Grid.Row="1">
+                <ScrollViewer x:Name="ScrollViewerLocationResults" Margin="0" Grid.Row="1" Height="593" VerticalAlignment="Bottom" FontFamily="Ebrima" FontSize="29.333">
                     <StackPanel x:Name="StackPanelLocationResults"/>
                 </ScrollViewer>
-                <Grid x:Name="GridSearch" Margin="0">
+                <Grid x:Name="GridSearch" Margin="0" Height="75" VerticalAlignment="Top">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="3*"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox x:Name="TextBoxSearch" Margin="0" TextWrapping="Wrap" Text="Enter Location" FontSize="50"/>
-                    <Button x:Name="ButtonSearch" Content="Search" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" FontSize="30" Click="ButtonClickSearchLocations"/>
+                    <TextBox x:Name="TextBoxSearch" Margin="0" TextWrapping="Wrap" Text="Enter Location" FontSize="29.333" FontFamily="Ebrima" Height="75" VerticalAlignment="Top" TextAlignment="Center" Padding="10,14,10,0"/>
+                    <Button x:Name="ButtonSearch" Content="Search" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" FontSize="29.333" Click="ButtonClickSearchLocations" FontFamily="Ebrima" Height="75" FontWeight="Normal" Padding="12,2,12,4"/>
                 </Grid>
             </Grid>
         </Grid>
-        <Grid x:Name="HeaderGrid" Margin="0">
+        <Grid x:Name="HeaderGrid" Margin="0" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="+" FontSize="64" TextAlignment="Center" Tapped="TappedAddLocation" FontFamily="Ebrima"/>
-            <TextBlock x:Name="TextBlockTripp" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="tripp" TextAlignment="Center" FontSize="64" FontFamily="Ebrima"/>
-            <TextBlock Margin="0" TextWrapping="Wrap" Text="?" FontSize="64" TextAlignment="Center" FontFamily="Ebrima"/>
+            <TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="+" FontSize="64" TextAlignment="Center" Tapped="TappedAddLocation" FontFamily="Ebrima" Height="80" VerticalAlignment="Top"/>
+            <TextBlock x:Name="TextBlockTripp" Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="tripp" TextAlignment="Center" FontSize="64" FontFamily="Ebrima" VerticalAlignment="Top" Height="80" Padding="0,-8,0,8"/>
+            <TextBlock Margin="0" TextWrapping="Wrap" Text="?" FontSize="64" TextAlignment="Center" FontFamily="Ebrima" Height="80" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Page>
